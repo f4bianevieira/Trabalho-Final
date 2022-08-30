@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/recados.css">
+    <title>Minha página de recados</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div id="content1">
+                <h1 id="logado"> </h1>
+            </div>
+            <div id="titulo-float">
+                <table id="titulos">
+                    <tr>
+                        <td width="30px">ID</td>
+                        <td width="450px">Detalhamento</td>
+                        <td width="730px">Descrição</td>
+                        <td>Ação</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="content2">
+                <hr>
+            </div>
+
+            <div class="label-float">
+                <label id="idMsgLabel" for="idMsg" width="85px"></label>
+                <input type="text" id="idMsg" placeholder=" ID MSG"  disabled> 
+            </div>
+            <div class="label-float">
+                <label id="detalhamentoLabel" for="detalhamento"></label>
+                <input type="text" id="detalhamento" class="label-input" placeholder=" Detalhamento" required>
+            </div>
+
+            <div class="label-float">
+                <label id="descricaoLabel" for="descricao"></label>
+                <input type="text" id="descricao" class="label-input" placeholder="Descrição " required >
+            </div>
+            <div class="label-float">
+                <button type="button" id="salvarRecado" onclick="salvaRecados()">salvar</button>
+            </div>
+            
+            <div id="content2">
+                <hr>
+            </div>
+           
+            <div id="content2">
+                <hr>
+            </div>
+                <table id="tabela">
+                    
+                </table> 
+            </div>
+                
+            </div>
+    </div>
+    
+    </div>
+    <div id="sair">
+        <button type="button" id="sairBtn" onclick="sair()">sair</button>
+    </div>
+    <script src="./js/recados.js"></script>
+</body>
+
+</html>
